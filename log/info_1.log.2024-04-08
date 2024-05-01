@@ -1,0 +1,858 @@
+[12:32:48:108] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting MallApplication on MateBookD15 with PID 34548 (D:\program\javacode\mall\target\classes started by MLMHYL.D in D:\program\javacode\mall)
+[12:32:48:140] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[12:32:53:609] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8083 (http)
+[12:32:53:629] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8083"]
+[12:32:53:631] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[12:32:53:632] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[12:32:54:056] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[12:32:54:073] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 5833 ms
+[12:32:56:347] [INFO] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[12:32:56:923] [INFO] - org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>(WelcomePageHandlerMapping.java:54) - Adding welcome page: class path resource [static/index.html]
+[12:32:57:370] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+[12:32:57:408] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+[12:32:57:485] [INFO] - springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+[12:32:58:353] [INFO] - springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator.startingWith(CachingOperationNameGenerator.java:40) - Generating unique operation named: listUsingPOST_1
+[12:32:59:213] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8083"]
+[12:32:59:242] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8083 (http) with context path ''
+[12:32:59:248] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started MallApplication in 12.139 seconds (JVM running for 17.536)
+[12:36:15:482] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[12:36:15:482] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[12:36:15:487] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 5 ms
+[12:36:15:546] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/login
+[12:36:15:547] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : POST
+[12:36:15:547] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[12:36:15:553] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.UserController.login
+[12:36:15:554] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [111, 11111111, org.apache.catalina.session.StandardSessionFacade@1fb31b35]
+[12:36:15:676] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110) - imooc_mall_datasource - Starting...
+[12:36:16:055] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123) - imooc_mall_datasource - Start completed.
+[12:36:16:322] [INFO] - com.imooc.mall.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:45) - RESPONSE : {"status":10000,"msg":"SUCCESS","date":{"id":23,"username":"111","password":null,"personalizedSignature":"","role":1,"createTime":1712470555000,"updateTime":1712470555000}}
+[12:36:20:575] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/order/create
+[12:36:20:575] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : POST
+[12:36:20:576] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[12:36:20:576] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.OrderController.create
+[12:36:20:576] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [com.imooc.mall.model.request.CreateOrderReq@935bf4b]
+[12:36:20:740] [INFO] - com.imooc.mall.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:45) - RESPONSE : {"status":10000,"msg":"SUCCESS","date":"112362026412"}
+[12:37:04:785] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/cart/add
+[12:37:04:785] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : POST
+[12:37:04:785] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[12:37:04:785] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.CartController.add
+[12:37:04:788] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [23, 2]
+[12:37:04:845] [INFO] - com.imooc.mall.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:45) - RESPONSE : {"status":10000,"msg":"SUCCESS","date":[{"id":4,"productId":23,"userId":23,"quantity":2,"selected":1,"price":12,"totalPrice":24,"productName":"澳大利亚直采鲜橙 精品澳橙12粒 单果130-180g","productImage":"http://127.0.0.1:8083/images/chengzi.jpg"}]}
+[12:37:06:346] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/cart/add
+[12:37:06:347] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : POST
+[12:37:06:347] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[12:37:06:347] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.CartController.add
+[12:37:06:348] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [23, 2]
+[12:37:06:376] [INFO] - com.imooc.mall.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:45) - RESPONSE : {"status":10000,"msg":"SUCCESS","date":[{"id":4,"productId":23,"userId":23,"quantity":4,"selected":1,"price":12,"totalPrice":48,"productName":"澳大利亚直采鲜橙 精品澳橙12粒 单果130-180g","productImage":"http://127.0.0.1:8083/images/chengzi.jpg"}]}
+[12:37:51:226] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/order/create
+[12:37:51:227] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : POST
+[12:37:51:227] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[12:37:51:228] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.OrderController.create
+[12:37:51:228] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [com.imooc.mall.model.request.CreateOrderReq@45934fcc]
+[12:37:51:286] [INFO] - com.imooc.mall.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:45) - RESPONSE : {"status":10000,"msg":"SUCCESS","date":"112375126639"}
+[13:44:20:291] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting MallApplication on MateBookD15 with PID 101196 (D:\program\javacode\mall\target\classes started by MLMHYL.D in D:\program\javacode\mall)
+[13:44:20:298] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[13:44:24:204] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8083 (http)
+[13:44:24:220] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8083"]
+[13:44:24:221] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[13:44:24:222] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[13:44:24:531] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[13:44:24:531] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 4068 ms
+[13:44:26:758] [INFO] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[13:44:27:208] [INFO] - org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>(WelcomePageHandlerMapping.java:54) - Adding welcome page: class path resource [static/index.html]
+[13:44:27:727] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+[13:44:27:767] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+[13:44:27:848] [INFO] - springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+[13:44:28:820] [INFO] - springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator.startingWith(CachingOperationNameGenerator.java:40) - Generating unique operation named: listUsingPOST_1
+[13:44:29:818] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8083"]
+[13:44:29:858] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8083 (http) with context path ''
+[13:44:29:862] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started MallApplication in 10.777 seconds (JVM running for 14.194)
+[13:45:35:412] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[13:45:35:412] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[13:45:35:419] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 7 ms
+[13:45:39:169] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/login
+[13:45:39:170] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : POST
+[13:45:39:170] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[13:45:39:175] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.UserController.login
+[13:45:39:175] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [111, 11111111, org.apache.catalina.session.StandardSessionFacade@11adc9ab]
+[13:45:39:268] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110) - imooc_mall_datasource - Starting...
+[13:45:39:586] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123) - imooc_mall_datasource - Start completed.
+[13:45:39:802] [INFO] - com.imooc.mall.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:45) - RESPONSE : {"status":10000,"msg":"SUCCESS","date":{"id":23,"username":"111","password":null,"personalizedSignature":"","role":1,"createTime":1712470555000,"updateTime":1712470555000}}
+[13:45:42:616] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/order/detail
+[13:45:42:616] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : GET
+[13:45:42:616] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[13:45:42:617] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.OrderController.detail
+[13:45:42:617] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [112375126639]
+[13:46:05:869] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/order/detail
+[13:46:05:870] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : GET
+[13:46:05:870] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[13:46:05:870] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.OrderController.detail
+[13:46:05:871] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [112375126639]
+[13:46:21:982] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/order/detail
+[13:46:21:983] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : GET
+[13:46:21:983] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[13:46:21:983] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.OrderController.detail
+[13:46:21:984] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [112362026412]
+[13:46:51:389] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/order/create
+[13:46:51:389] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : POST
+[13:46:51:389] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[13:46:51:390] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.OrderController.create
+[13:46:51:390] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [com.imooc.mall.model.request.CreateOrderReq@3c23d3d7]
+[13:47:03:463] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/cart/add
+[13:47:03:463] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : POST
+[13:47:03:463] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[13:47:03:463] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.CartController.add
+[13:47:03:464] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [23, 2]
+[13:47:03:565] [INFO] - com.imooc.mall.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:45) - RESPONSE : {"status":10000,"msg":"SUCCESS","date":[{"id":5,"productId":23,"userId":23,"quantity":2,"selected":1,"price":12,"totalPrice":24,"productName":"澳大利亚直采鲜橙 精品澳橙12粒 单果130-180g","productImage":"http://127.0.0.1:8083/images/chengzi.jpg"}]}
+[13:47:05:938] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/cart/add
+[13:47:05:939] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : POST
+[13:47:05:939] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[13:47:05:939] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.CartController.add
+[13:47:05:939] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [23, 2]
+[13:47:05:983] [INFO] - com.imooc.mall.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:45) - RESPONSE : {"status":10000,"msg":"SUCCESS","date":[{"id":5,"productId":23,"userId":23,"quantity":4,"selected":1,"price":12,"totalPrice":48,"productName":"澳大利亚直采鲜橙 精品澳橙12粒 单果130-180g","productImage":"http://127.0.0.1:8083/images/chengzi.jpg"}]}
+[13:47:12:182] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/order/create
+[13:47:12:182] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : POST
+[13:47:12:182] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[13:47:12:183] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.OrderController.create
+[13:47:12:183] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [com.imooc.mall.model.request.CreateOrderReq@16ae051b]
+[13:47:12:284] [INFO] - com.imooc.mall.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:45) - RESPONSE : {"status":10000,"msg":"SUCCESS","date":"113471226716"}
+[13:47:57:043] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/order/detail
+[13:47:57:044] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : GET
+[13:47:57:044] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[13:47:57:044] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.OrderController.detail
+[13:47:57:044] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [113471226716]
+[13:55:04:498] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting MallApplication on MateBookD15 with PID 61808 (D:\program\javacode\mall\target\classes started by MLMHYL.D in D:\program\javacode\mall)
+[13:55:04:505] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[13:55:08:969] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8083 (http)
+[13:55:08:989] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8083"]
+[13:55:08:990] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[13:55:08:991] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[13:55:09:387] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[13:55:09:391] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 4740 ms
+[13:55:12:035] [INFO] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[13:55:12:512] [INFO] - org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>(WelcomePageHandlerMapping.java:54) - Adding welcome page: class path resource [static/index.html]
+[13:55:12:920] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+[13:55:12:952] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+[13:55:13:023] [INFO] - springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+[13:55:13:743] [INFO] - springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator.startingWith(CachingOperationNameGenerator.java:40) - Generating unique operation named: listUsingPOST_1
+[13:55:14:697] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8083"]
+[13:55:14:734] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8083 (http) with context path ''
+[13:55:14:739] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started MallApplication in 11.531 seconds (JVM running for 14.795)
+[13:55:27:421] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[13:55:27:421] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[13:55:27:425] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 4 ms
+[13:55:27:506] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/login
+[13:55:27:506] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : POST
+[13:55:27:508] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[13:55:27:512] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.UserController.login
+[13:55:27:513] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [111, 11111111, org.apache.catalina.session.StandardSessionFacade@4d7cc40c]
+[13:55:27:609] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110) - imooc_mall_datasource - Starting...
+[13:55:27:993] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123) - imooc_mall_datasource - Start completed.
+[13:55:28:192] [INFO] - com.imooc.mall.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:45) - RESPONSE : {"status":10000,"msg":"SUCCESS","date":{"id":23,"username":"111","password":null,"personalizedSignature":"","role":1,"createTime":1712470555000,"updateTime":1712470555000}}
+[13:55:49:818] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/order/detail
+[13:55:49:818] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : GET
+[13:55:49:818] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[13:55:49:819] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.OrderController.detail
+[13:55:49:819] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [113471226716]
+[14:09:40:168] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting MallApplication on MateBookD15 with PID 98496 (D:\program\javacode\mall\target\classes started by MLMHYL.D in D:\program\javacode\mall)
+[14:09:40:188] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[14:09:44:353] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8083 (http)
+[14:09:44:379] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8083"]
+[14:09:44:380] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[14:09:44:381] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[14:09:44:575] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[14:09:44:579] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 4239 ms
+[14:09:47:135] [INFO] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[14:09:47:637] [INFO] - org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>(WelcomePageHandlerMapping.java:54) - Adding welcome page: class path resource [static/index.html]
+[14:09:48:184] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+[14:09:48:216] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+[14:09:48:280] [INFO] - springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+[14:09:49:215] [INFO] - springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator.startingWith(CachingOperationNameGenerator.java:40) - Generating unique operation named: detailUsingPOST_1
+[14:09:49:224] [INFO] - springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator.startingWith(CachingOperationNameGenerator.java:40) - Generating unique operation named: listUsingPOST_1
+[14:09:50:253] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8083"]
+[14:09:50:292] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8083 (http) with context path ''
+[14:09:50:297] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started MallApplication in 11.697 seconds (JVM running for 15.796)
+[14:09:56:268] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[14:09:56:268] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[14:09:56:271] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 3 ms
+[14:09:56:376] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/login
+[14:09:56:377] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : POST
+[14:09:56:377] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[14:09:56:380] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.UserController.login
+[14:09:56:382] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [111, 11111111, org.apache.catalina.session.StandardSessionFacade@242742c]
+[14:09:56:470] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110) - imooc_mall_datasource - Starting...
+[14:09:56:761] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123) - imooc_mall_datasource - Start completed.
+[14:09:56:938] [INFO] - com.imooc.mall.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:45) - RESPONSE : {"status":10000,"msg":"SUCCESS","date":{"id":23,"username":"111","password":null,"personalizedSignature":"","role":1,"createTime":1712470555000,"updateTime":1712470555000}}
+[14:09:59:824] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/order/detail
+[14:09:59:825] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : POST
+[14:09:59:825] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[14:09:59:825] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.OrderController.detail
+[14:09:59:826] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [113471226716]
+[14:12:27:269] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting MallApplication on MateBookD15 with PID 32488 (D:\program\javacode\mall\target\classes started by MLMHYL.D in D:\program\javacode\mall)
+[14:12:27:277] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[14:12:30:468] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8083 (http)
+[14:12:30:486] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8083"]
+[14:12:30:487] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[14:12:30:488] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[14:12:30:712] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[14:12:30:712] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 3320 ms
+[14:12:32:622] [INFO] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[14:12:33:063] [INFO] - org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>(WelcomePageHandlerMapping.java:54) - Adding welcome page: class path resource [static/index.html]
+[14:12:33:464] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+[14:12:33:504] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+[14:12:33:575] [INFO] - springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+[14:12:34:290] [INFO] - springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator.startingWith(CachingOperationNameGenerator.java:40) - Generating unique operation named: listUsingPOST_1
+[14:12:35:239] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8083"]
+[14:12:35:276] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8083 (http) with context path ''
+[14:12:35:281] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started MallApplication in 9.35 seconds (JVM running for 12.305)
+[14:12:52:938] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[14:12:52:939] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[14:12:52:943] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 4 ms
+[14:12:53:024] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/login
+[14:12:53:024] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : POST
+[14:12:53:025] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[14:12:53:028] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.UserController.login
+[14:12:53:029] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [111, 11111111, org.apache.catalina.session.StandardSessionFacade@32807d78]
+[14:12:53:139] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110) - imooc_mall_datasource - Starting...
+[14:12:53:563] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123) - imooc_mall_datasource - Start completed.
+[14:12:53:812] [INFO] - com.imooc.mall.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:45) - RESPONSE : {"status":10000,"msg":"SUCCESS","date":{"id":23,"username":"111","password":null,"personalizedSignature":"","role":1,"createTime":1712470555000,"updateTime":1712470555000}}
+[14:13:04:478] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/order/detail
+[14:13:04:478] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : GET
+[14:13:04:479] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[14:13:04:479] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.OrderController.detail
+[14:13:04:479] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [113471226716]
+[14:18:51:473] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting MallApplication on MateBookD15 with PID 65824 (D:\program\javacode\mall\target\classes started by MLMHYL.D in D:\program\javacode\mall)
+[14:18:51:483] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[14:18:54:623] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8083 (http)
+[14:18:54:643] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8083"]
+[14:18:54:644] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[14:18:54:645] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[14:18:55:003] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[14:18:55:003] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 3430 ms
+[14:18:57:071] [INFO] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[14:18:57:510] [INFO] - org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>(WelcomePageHandlerMapping.java:54) - Adding welcome page: class path resource [static/index.html]
+[14:18:58:006] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+[14:18:58:052] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+[14:18:58:118] [INFO] - springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+[14:18:58:779] [INFO] - springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator.startingWith(CachingOperationNameGenerator.java:40) - Generating unique operation named: listUsingPOST_1
+[14:18:59:703] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8083"]
+[14:18:59:762] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8083 (http) with context path ''
+[14:18:59:770] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started MallApplication in 9.263 seconds (JVM running for 12.746)
+[14:19:07:892] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[14:19:07:892] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[14:19:07:895] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 3 ms
+[14:19:07:959] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/login
+[14:19:07:959] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : POST
+[14:19:07:960] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[14:19:07:962] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.UserController.login
+[14:19:07:962] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [111, 11111111, org.apache.catalina.session.StandardSessionFacade@5f843eb0]
+[14:19:08:038] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110) - imooc_mall_datasource - Starting...
+[14:19:08:296] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123) - imooc_mall_datasource - Start completed.
+[14:19:08:473] [INFO] - com.imooc.mall.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:45) - RESPONSE : {"status":10000,"msg":"SUCCESS","date":{"id":23,"username":"111","password":null,"personalizedSignature":"","role":1,"createTime":1712470555000,"updateTime":1712470555000}}
+[14:19:55:525] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/order/detail
+[14:19:55:525] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : GET
+[14:19:55:525] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[14:19:55:526] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.OrderController.detail
+[14:19:55:526] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [113471226716]
+[14:22:43:905] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting MallApplication on MateBookD15 with PID 7396 (D:\program\javacode\mall\target\classes started by MLMHYL.D in D:\program\javacode\mall)
+[14:22:43:913] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[14:22:46:458] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8083 (http)
+[14:22:46:471] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8083"]
+[14:22:46:472] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[14:22:46:472] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[14:22:46:651] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[14:22:46:651] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 2649 ms
+[14:22:48:207] [INFO] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[14:22:48:565] [INFO] - org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>(WelcomePageHandlerMapping.java:54) - Adding welcome page: class path resource [static/index.html]
+[14:22:48:894] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+[14:22:48:922] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+[14:22:48:988] [INFO] - springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+[14:22:49:680] [INFO] - springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator.startingWith(CachingOperationNameGenerator.java:40) - Generating unique operation named: listUsingPOST_1
+[14:22:50:421] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8083"]
+[14:22:50:450] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8083 (http) with context path ''
+[14:22:50:454] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started MallApplication in 7.546 seconds (JVM running for 11.377)
+[14:22:58:642] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[14:22:58:642] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[14:22:58:645] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 3 ms
+[14:22:58:711] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/login
+[14:22:58:711] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : POST
+[14:22:58:711] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[14:22:58:714] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.UserController.login
+[14:22:58:714] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [111, 11111111, org.apache.catalina.session.StandardSessionFacade@430aa15b]
+[14:22:58:791] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110) - imooc_mall_datasource - Starting...
+[14:22:59:023] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123) - imooc_mall_datasource - Start completed.
+[14:22:59:213] [INFO] - com.imooc.mall.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:45) - RESPONSE : {"status":10000,"msg":"SUCCESS","date":{"id":23,"username":"111","password":null,"personalizedSignature":"","role":1,"createTime":1712470555000,"updateTime":1712470555000}}
+[14:23:02:651] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/order/detail
+[14:23:02:651] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : GET
+[14:23:02:652] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[14:23:02:652] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.OrderController.detail
+[14:23:02:652] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [113471226716]
+[15:04:25:344] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting MallApplication on MateBookD15 with PID 10892 (D:\program\javacode\mall\target\classes started by MLMHYL.D in D:\program\javacode\mall)
+[15:04:25:350] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[15:04:28:041] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8083 (http)
+[15:04:28:059] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8083"]
+[15:04:28:060] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[15:04:28:060] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[15:04:28:287] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[15:04:28:288] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 2837 ms
+[15:04:30:101] [INFO] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[15:04:30:595] [INFO] - org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>(WelcomePageHandlerMapping.java:54) - Adding welcome page: class path resource [static/index.html]
+[15:04:31:054] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+[15:04:31:087] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+[15:04:31:154] [INFO] - springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+[15:04:31:916] [INFO] - springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator.startingWith(CachingOperationNameGenerator.java:40) - Generating unique operation named: listUsingPOST_1
+[15:04:32:946] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8083"]
+[15:04:32:984] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8083 (http) with context path ''
+[15:04:32:991] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started MallApplication in 9.031 seconds (JVM running for 11.947)
+[15:04:43:015] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[15:04:43:015] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[15:04:43:019] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 4 ms
+[15:04:43:082] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/login
+[15:04:43:082] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : POST
+[15:04:43:082] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[15:04:43:087] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.UserController.login
+[15:04:43:088] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [111, 11111111, org.apache.catalina.session.StandardSessionFacade@2d916159]
+[15:04:43:159] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110) - imooc_mall_datasource - Starting...
+[15:04:43:374] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123) - imooc_mall_datasource - Start completed.
+[15:04:43:563] [INFO] - com.imooc.mall.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:45) - RESPONSE : {"status":10000,"msg":"SUCCESS","date":{"id":23,"username":"111","password":null,"personalizedSignature":"","role":1,"createTime":1712470555000,"updateTime":1712470555000}}
+[15:04:47:260] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/order/detail
+[15:04:47:260] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : GET
+[15:04:47:261] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[15:04:47:261] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.OrderController.detail
+[15:04:47:261] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [113471226716]
+[15:04:56:475] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/cart/add
+[15:04:56:476] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : POST
+[15:04:56:476] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[15:04:56:477] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.CartController.add
+[15:04:56:477] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [23, 2]
+[15:04:56:573] [INFO] - com.imooc.mall.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:45) - RESPONSE : {"status":10000,"msg":"SUCCESS","date":[{"id":6,"productId":23,"userId":23,"quantity":2,"selected":1,"price":12,"totalPrice":24,"productName":"澳大利亚直采鲜橙 精品澳橙12粒 单果130-180g","productImage":"http://127.0.0.1:8083/images/chengzi.jpg"}]}
+[15:05:00:507] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/order/create
+[15:05:00:507] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : POST
+[15:05:00:508] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[15:05:00:508] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.OrderController.create
+[15:05:00:508] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [com.imooc.mall.model.request.CreateOrderReq@69d1717a]
+[15:05:00:592] [INFO] - com.imooc.mall.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:45) - RESPONSE : {"status":10000,"msg":"SUCCESS","date":"115050026606"}
+[15:05:09:842] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/order/detail
+[15:05:09:843] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : GET
+[15:05:09:843] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[15:05:09:843] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.OrderController.detail
+[15:05:09:843] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [115050026606]
+[15:25:17:786] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting MallApplication on MateBookD15 with PID 92608 (D:\program\javacode\mall\target\classes started by MLMHYL.D in D:\program\javacode\mall)
+[15:25:17:803] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[15:25:21:945] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8083 (http)
+[15:25:21:960] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8083"]
+[15:25:21:962] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[15:25:21:962] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[15:25:22:140] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[15:25:22:142] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 4138 ms
+[15:25:24:067] [INFO] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[15:25:24:607] [INFO] - org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>(WelcomePageHandlerMapping.java:54) - Adding welcome page: class path resource [static/index.html]
+[15:25:25:050] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+[15:25:25:143] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+[15:25:25:196] [INFO] - springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+[15:25:25:949] [INFO] - springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator.startingWith(CachingOperationNameGenerator.java:40) - Generating unique operation named: listUsingPOST_1
+[15:25:26:995] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8083"]
+[15:25:27:035] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8083 (http) with context path ''
+[15:25:27:041] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started MallApplication in 11.048 seconds (JVM running for 15.021)
+[15:25:33:583] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[15:25:33:583] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[15:25:33:592] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 9 ms
+[15:25:33:668] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/login
+[15:25:33:668] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : POST
+[15:25:33:668] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[15:25:33:674] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.UserController.login
+[15:25:33:674] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [111, 11111111, org.apache.catalina.session.StandardSessionFacade@2d394bd2]
+[15:25:33:765] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110) - imooc_mall_datasource - Starting...
+[15:25:34:159] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123) - imooc_mall_datasource - Start completed.
+[15:25:34:381] [INFO] - com.imooc.mall.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:45) - RESPONSE : {"status":10000,"msg":"SUCCESS","date":{"id":23,"username":"111","password":null,"personalizedSignature":"","role":1,"createTime":1712470555000,"updateTime":1712470555000}}
+[15:26:20:128] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/order/detail
+[15:26:20:128] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : GET
+[15:26:20:128] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[15:26:20:129] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.OrderController.detail
+[15:26:20:130] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [115050026606]
+[15:36:53:934] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting MallApplication on MateBookD15 with PID 100464 (D:\program\javacode\mall\target\classes started by MLMHYL.D in D:\program\javacode\mall)
+[15:36:53:944] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[15:36:58:239] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8083 (http)
+[15:36:58:267] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8083"]
+[15:36:58:269] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[15:36:58:269] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[15:36:58:692] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[15:36:58:693] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 4617 ms
+[15:37:00:895] [INFO] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[15:37:01:263] [INFO] - org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>(WelcomePageHandlerMapping.java:54) - Adding welcome page: class path resource [static/index.html]
+[15:37:01:627] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+[15:37:01:656] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+[15:37:01:712] [INFO] - springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+[15:37:02:284] [INFO] - springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator.startingWith(CachingOperationNameGenerator.java:40) - Generating unique operation named: listUsingPOST_1
+[15:37:03:094] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8083"]
+[15:37:03:133] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8083 (http) with context path ''
+[15:37:03:137] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started MallApplication in 10.802 seconds (JVM running for 16.085)
+[15:37:12:231] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[15:37:12:231] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[15:37:12:234] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 3 ms
+[15:37:12:334] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/login
+[15:37:12:335] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : POST
+[15:37:12:335] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[15:37:12:338] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.UserController.login
+[15:37:12:339] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [111, 11111111, org.apache.catalina.session.StandardSessionFacade@68b03f60]
+[15:37:12:433] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110) - imooc_mall_datasource - Starting...
+[15:37:12:822] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123) - imooc_mall_datasource - Start completed.
+[15:37:13:111] [INFO] - com.imooc.mall.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:45) - RESPONSE : {"status":10000,"msg":"SUCCESS","date":{"id":23,"username":"111","password":null,"personalizedSignature":"","role":1,"createTime":1712470555000,"updateTime":1712470555000}}
+[15:37:17:221] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/order/detail
+[15:37:17:222] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : GET
+[15:37:17:222] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[15:37:17:223] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.OrderController.detail
+[15:37:17:223] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [115050026606]
+[16:03:26:490] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting MallApplication on MateBookD15 with PID 24084 (D:\program\javacode\mall\target\classes started by MLMHYL.D in D:\program\javacode\mall)
+[16:03:26:535] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[16:03:30:271] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8083 (http)
+[16:03:30:293] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8083"]
+[16:03:30:294] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[16:03:30:295] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[16:03:30:554] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[16:03:30:561] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 3827 ms
+[16:03:32:761] [INFO] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[16:03:33:248] [INFO] - org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>(WelcomePageHandlerMapping.java:54) - Adding welcome page: class path resource [static/index.html]
+[16:03:33:709] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+[16:03:33:752] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+[16:03:33:828] [INFO] - springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+[16:03:34:600] [INFO] - springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator.startingWith(CachingOperationNameGenerator.java:40) - Generating unique operation named: listUsingGET_1
+[16:03:34:679] [INFO] - springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator.startingWith(CachingOperationNameGenerator.java:40) - Generating unique operation named: listUsingPOST_1
+[16:03:35:771] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8083"]
+[16:03:35:820] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8083 (http) with context path ''
+[16:03:35:827] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started MallApplication in 10.674 seconds (JVM running for 14.205)
+[16:04:26:975] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[16:04:26:976] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[16:04:26:979] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 3 ms
+[16:04:27:075] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/login
+[16:04:27:075] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : POST
+[16:04:27:076] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[16:04:27:087] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.UserController.login
+[16:04:27:087] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [111, 11111111, org.apache.catalina.session.StandardSessionFacade@1715df17]
+[16:04:27:195] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110) - imooc_mall_datasource - Starting...
+[16:04:27:582] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123) - imooc_mall_datasource - Start completed.
+[16:04:27:852] [INFO] - com.imooc.mall.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:45) - RESPONSE : {"status":10000,"msg":"SUCCESS","date":{"id":23,"username":"111","password":null,"personalizedSignature":"","role":1,"createTime":1712470555000,"updateTime":1712470555000}}
+[16:04:31:194] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/order/list
+[16:04:31:194] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : GET
+[16:04:31:194] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[16:04:31:195] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.OrderController.list
+[16:04:31:195] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [1, 10]
+[16:14:34:459] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting MallApplication on MateBookD15 with PID 63068 (D:\program\javacode\mall\target\classes started by MLMHYL.D in D:\program\javacode\mall)
+[16:14:34:474] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[16:14:37:430] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8083 (http)
+[16:14:37:446] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8083"]
+[16:14:37:447] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[16:14:37:448] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[16:14:37:653] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[16:14:37:654] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 3001 ms
+[16:14:39:440] [INFO] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[16:14:39:859] [INFO] - org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>(WelcomePageHandlerMapping.java:54) - Adding welcome page: class path resource [static/index.html]
+[16:14:40:236] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+[16:14:40:267] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+[16:14:40:320] [INFO] - springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+[16:14:40:878] [INFO] - springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator.startingWith(CachingOperationNameGenerator.java:40) - Generating unique operation named: listUsingGET_1
+[16:14:40:948] [INFO] - springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator.startingWith(CachingOperationNameGenerator.java:40) - Generating unique operation named: listUsingPOST_1
+[16:14:41:838] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8083"]
+[16:14:41:874] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8083 (http) with context path ''
+[16:14:41:879] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started MallApplication in 8.437 seconds (JVM running for 11.68)
+[16:14:49:714] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[16:14:49:714] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[16:14:49:718] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 3 ms
+[16:14:49:803] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/login
+[16:14:49:803] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : POST
+[16:14:49:804] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[16:14:49:810] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.UserController.login
+[16:14:49:810] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [111, 11111111, org.apache.catalina.session.StandardSessionFacade@4d7cc40c]
+[16:14:49:911] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110) - imooc_mall_datasource - Starting...
+[16:14:50:300] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123) - imooc_mall_datasource - Start completed.
+[16:14:50:584] [INFO] - com.imooc.mall.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:45) - RESPONSE : {"status":10000,"msg":"SUCCESS","date":{"id":23,"username":"111","password":null,"personalizedSignature":"","role":1,"createTime":1712470555000,"updateTime":1712470555000}}
+[16:14:56:644] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/order/detail
+[16:14:56:645] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : GET
+[16:14:56:645] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[16:14:56:645] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.OrderController.detail
+[16:14:56:645] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [115050026606]
+[16:15:00:240] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/order/list
+[16:15:00:240] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : GET
+[16:15:00:240] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[16:15:00:241] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.OrderController.list
+[16:15:00:241] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [1, 10]
+[16:16:17:348] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting MallApplication on MateBookD15 with PID 68104 (D:\program\javacode\mall\target\classes started by MLMHYL.D in D:\program\javacode\mall)
+[16:16:17:356] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[16:16:20:225] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8083 (http)
+[16:16:20:241] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8083"]
+[16:16:20:241] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[16:16:20:242] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[16:16:20:440] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[16:16:20:441] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 2954 ms
+[16:16:22:335] [INFO] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[16:16:22:754] [INFO] - org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>(WelcomePageHandlerMapping.java:54) - Adding welcome page: class path resource [static/index.html]
+[16:16:23:132] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+[16:16:23:159] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+[16:16:23:222] [INFO] - springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+[16:16:23:826] [INFO] - springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator.startingWith(CachingOperationNameGenerator.java:40) - Generating unique operation named: listUsingGET_1
+[16:16:23:886] [INFO] - springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator.startingWith(CachingOperationNameGenerator.java:40) - Generating unique operation named: listUsingPOST_1
+[16:16:24:744] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8083"]
+[16:16:24:776] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8083 (http) with context path ''
+[16:16:24:782] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started MallApplication in 8.67 seconds (JVM running for 12.53)
+[16:16:32:404] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[16:16:32:404] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[16:16:32:406] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 2 ms
+[16:16:32:479] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/login
+[16:16:32:479] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : POST
+[16:16:32:480] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[16:16:32:482] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.UserController.login
+[16:16:32:482] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [111, 11111111, org.apache.catalina.session.StandardSessionFacade@ae51318]
+[16:16:32:565] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110) - imooc_mall_datasource - Starting...
+[16:16:32:835] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123) - imooc_mall_datasource - Start completed.
+[16:16:33:029] [INFO] - com.imooc.mall.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:45) - RESPONSE : {"status":10000,"msg":"SUCCESS","date":{"id":23,"username":"111","password":null,"personalizedSignature":"","role":1,"createTime":1712470555000,"updateTime":1712470555000}}
+[16:16:43:331] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/order/detail
+[16:16:43:332] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : GET
+[16:16:43:332] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[16:16:43:332] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.OrderController.detail
+[16:16:43:332] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [115050026606]
+[16:16:47:066] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/order/list
+[16:16:47:067] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : GET
+[16:16:47:067] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[16:16:47:067] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.OrderController.list
+[16:16:47:067] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [1, 10]
+[16:36:23:051] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting MallApplication on MateBookD15 with PID 9756 (D:\program\javacode\mall\target\classes started by MLMHYL.D in D:\program\javacode\mall)
+[16:36:23:061] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[16:36:26:347] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8083 (http)
+[16:36:26:360] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8083"]
+[16:36:26:361] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[16:36:26:361] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[16:36:26:597] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[16:36:26:598] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 3423 ms
+[16:36:28:564] [INFO] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[16:36:28:990] [INFO] - org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>(WelcomePageHandlerMapping.java:54) - Adding welcome page: class path resource [static/index.html]
+[16:36:30:201] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+[16:36:30:295] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+[16:36:30:495] [INFO] - springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+[16:36:32:091] [INFO] - springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator.startingWith(CachingOperationNameGenerator.java:40) - Generating unique operation named: listUsingGET_1
+[16:36:32:169] [INFO] - springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator.startingWith(CachingOperationNameGenerator.java:40) - Generating unique operation named: listUsingPOST_1
+[16:36:33:563] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8083"]
+[16:36:33:601] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8083 (http) with context path ''
+[16:36:33:606] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started MallApplication in 11.63 seconds (JVM running for 15.351)
+[16:39:03:405] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[16:39:03:406] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[16:39:03:412] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 6 ms
+[16:39:08:386] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/login
+[16:39:08:386] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : POST
+[16:39:08:386] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[16:39:08:391] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.UserController.login
+[16:39:08:392] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [111, 11111111, org.apache.catalina.session.StandardSessionFacade@7f198908]
+[16:39:08:477] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110) - imooc_mall_datasource - Starting...
+[16:39:08:741] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123) - imooc_mall_datasource - Start completed.
+[16:39:08:930] [INFO] - com.imooc.mall.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:45) - RESPONSE : {"status":10000,"msg":"SUCCESS","date":{"id":23,"username":"111","password":null,"personalizedSignature":"","role":1,"createTime":1712470555000,"updateTime":1712470555000}}
+[16:39:15:032] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/order/create
+[16:39:15:032] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : POST
+[16:39:15:032] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[16:39:15:033] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.OrderController.create
+[16:39:15:033] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [com.imooc.mall.model.request.CreateOrderReq@7f4ddfc6]
+[16:39:20:795] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/cart/add
+[16:39:20:795] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : POST
+[16:39:20:796] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[16:39:20:796] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.CartController.add
+[16:39:20:796] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [23, 2]
+[16:40:17:370] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/cart/add
+[16:40:17:370] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : POST
+[16:40:17:370] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[16:40:17:371] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.CartController.add
+[16:40:17:371] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [23, 2]
+[16:40:17:465] [INFO] - com.imooc.mall.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:45) - RESPONSE : {"status":10000,"msg":"SUCCESS","date":[{"id":7,"productId":23,"userId":23,"quantity":2,"selected":1,"price":12,"totalPrice":24,"productName":"澳大利亚直采鲜橙 精品澳橙12粒 单果130-180g","productImage":"http://127.0.0.1:8083/images/chengzi.jpg"}]}
+[16:40:24:948] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/order/create
+[16:40:24:948] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : POST
+[16:40:24:948] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[16:40:24:949] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.OrderController.create
+[16:40:24:949] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [com.imooc.mall.model.request.CreateOrderReq@3fe489a8]
+[16:40:25:018] [INFO] - com.imooc.mall.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:45) - RESPONSE : {"status":10000,"msg":"SUCCESS","date":"116402426783"}
+[16:40:36:969] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/order/detail
+[16:40:36:969] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : GET
+[16:40:36:970] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[16:40:36:970] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.OrderController.detail
+[16:40:36:970] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [11640242678]
+[16:40:54:686] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/order/detail
+[16:40:54:686] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : GET
+[16:40:54:686] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[16:40:54:687] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.OrderController.detail
+[16:40:54:687] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [116402426783]
+[16:41:37:428] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/order/list
+[16:41:37:429] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : GET
+[16:41:37:429] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[16:41:37:429] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.OrderController.list
+[16:41:37:429] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [1, 10]
+[16:54:07:882] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting MallApplication on MateBookD15 with PID 47780 (D:\program\javacode\mall\target\classes started by MLMHYL.D in D:\program\javacode\mall)
+[16:54:07:889] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[16:54:12:007] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8083 (http)
+[16:54:12:024] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8083"]
+[16:54:12:025] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[16:54:12:025] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[16:54:12:271] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[16:54:12:271] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 4229 ms
+[16:54:14:629] [INFO] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[16:54:15:165] [INFO] - org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>(WelcomePageHandlerMapping.java:54) - Adding welcome page: class path resource [static/index.html]
+[16:54:15:650] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+[16:54:15:683] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+[16:54:15:750] [INFO] - springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+[16:54:16:526] [INFO] - springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator.startingWith(CachingOperationNameGenerator.java:40) - Generating unique operation named: listUsingGET_1
+[16:54:16:596] [INFO] - springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator.startingWith(CachingOperationNameGenerator.java:40) - Generating unique operation named: listUsingPOST_1
+[16:54:17:672] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8083"]
+[16:54:17:714] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8083 (http) with context path ''
+[16:54:17:720] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started MallApplication in 11.234 seconds (JVM running for 14.739)
+[16:54:35:806] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[16:54:35:806] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[16:54:35:812] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 5 ms
+[16:54:35:898] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/login
+[16:54:35:898] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : POST
+[16:54:35:899] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[16:54:35:902] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.UserController.login
+[16:54:35:902] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [111, 11111111, org.apache.catalina.session.StandardSessionFacade@bc2d6dd]
+[16:54:35:994] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110) - imooc_mall_datasource - Starting...
+[16:54:36:284] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123) - imooc_mall_datasource - Start completed.
+[16:54:36:496] [INFO] - com.imooc.mall.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:45) - RESPONSE : {"status":10000,"msg":"SUCCESS","date":{"id":23,"username":"111","password":null,"personalizedSignature":"","role":1,"createTime":1712470555000,"updateTime":1712470555000}}
+[16:54:45:171] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/order/detail
+[16:54:45:172] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : GET
+[16:54:45:176] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[16:54:45:176] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.OrderController.detail
+[16:54:45:177] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [116402426783]
+[16:54:47:033] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/order/detail
+[16:54:47:033] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : GET
+[16:54:47:033] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[16:54:47:033] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.OrderController.detail
+[16:54:47:034] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [116402426783]
+[16:54:52:106] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/order/create
+[16:54:52:107] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : POST
+[16:54:52:107] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[16:54:52:107] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.OrderController.create
+[16:54:52:108] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [com.imooc.mall.model.request.CreateOrderReq@398c2bd1]
+[16:54:56:226] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/cart/add
+[16:54:56:226] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : POST
+[16:54:56:226] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[16:54:56:226] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.CartController.add
+[16:54:56:227] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [23, 2]
+[16:54:56:369] [INFO] - com.imooc.mall.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:45) - RESPONSE : {"status":10000,"msg":"SUCCESS","date":[{"id":8,"productId":23,"userId":23,"quantity":2,"selected":1,"price":12,"totalPrice":24,"productName":"澳大利亚直采鲜橙 精品澳橙12粒 单果130-180g","productImage":"http://127.0.0.1:8083/images/chengzi.jpg"}]}
+[16:54:59:520] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/order/create
+[16:54:59:521] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : POST
+[16:54:59:521] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[16:54:59:522] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.OrderController.create
+[16:54:59:522] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [com.imooc.mall.model.request.CreateOrderReq@2bf14d7e]
+[16:54:59:594] [INFO] - com.imooc.mall.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:45) - RESPONSE : {"status":10000,"msg":"SUCCESS","date":"116545926311"}
+[16:55:12:669] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/order/detail
+[16:55:12:670] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : GET
+[16:55:12:670] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[16:55:12:670] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.OrderController.detail
+[16:55:12:671] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [116545926311]
+[16:55:49:461] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/order/list
+[16:55:49:461] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : GET
+[16:55:49:462] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[16:55:49:462] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.OrderController.list
+[16:55:49:462] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [1, 10]
+[17:02:48:384] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting MallApplication on MateBookD15 with PID 98724 (D:\program\javacode\mall\target\classes started by MLMHYL.D in D:\program\javacode\mall)
+[17:02:48:391] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[17:02:51:494] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8083 (http)
+[17:02:51:512] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8083"]
+[17:02:51:513] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[17:02:51:513] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[17:02:51:769] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[17:02:51:770] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 3246 ms
+[17:02:53:626] [INFO] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[17:02:54:037] [INFO] - org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>(WelcomePageHandlerMapping.java:54) - Adding welcome page: class path resource [static/index.html]
+[17:02:54:465] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+[17:02:54:500] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+[17:02:54:588] [INFO] - springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+[17:02:55:302] [INFO] - springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator.startingWith(CachingOperationNameGenerator.java:40) - Generating unique operation named: listUsingGET_1
+[17:02:55:366] [INFO] - springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator.startingWith(CachingOperationNameGenerator.java:40) - Generating unique operation named: listUsingPOST_1
+[17:02:56:335] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8083"]
+[17:02:56:373] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8083 (http) with context path ''
+[17:02:56:378] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started MallApplication in 9.185 seconds (JVM running for 12.453)
+[17:03:07:254] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[17:03:07:254] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[17:03:07:258] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 3 ms
+[17:03:07:328] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/login
+[17:03:07:329] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : POST
+[17:03:07:329] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[17:03:07:334] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.UserController.login
+[17:03:07:334] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [111, 11111111, org.apache.catalina.session.StandardSessionFacade@178c351d]
+[17:03:07:424] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110) - imooc_mall_datasource - Starting...
+[17:03:07:715] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123) - imooc_mall_datasource - Start completed.
+[17:03:07:939] [INFO] - com.imooc.mall.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:45) - RESPONSE : {"status":10000,"msg":"SUCCESS","date":{"id":23,"username":"111","password":null,"personalizedSignature":"","role":1,"createTime":1712470555000,"updateTime":1712470555000}}
+[17:03:16:522] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/order/detail
+[17:03:16:522] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : GET
+[17:03:16:523] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[17:03:16:523] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.OrderController.detail
+[17:03:16:523] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [116545926311]
+[17:03:23:246] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/order/list
+[17:03:23:246] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : GET
+[17:03:23:246] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[17:03:23:246] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.OrderController.list
+[17:03:23:247] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [1, 10]
+[17:03:28:730] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/cart/add
+[17:03:28:731] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : POST
+[17:03:28:731] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[17:03:28:731] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.CartController.add
+[17:03:28:732] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [23, 2]
+[17:03:28:851] [INFO] - com.imooc.mall.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:45) - RESPONSE : {"status":10000,"msg":"SUCCESS","date":[{"id":9,"productId":23,"userId":23,"quantity":2,"selected":1,"price":12,"totalPrice":24,"productName":"澳大利亚直采鲜橙 精品澳橙12粒 单果130-180g","productImage":"http://127.0.0.1:8083/images/chengzi.jpg"}]}
+[17:03:32:260] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/order/create
+[17:03:32:261] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : POST
+[17:03:32:261] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[17:03:32:262] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.OrderController.create
+[17:03:32:262] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [com.imooc.mall.model.request.CreateOrderReq@51c1fafe]
+[17:03:32:348] [INFO] - com.imooc.mall.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:45) - RESPONSE : {"status":10000,"msg":"SUCCESS","date":"117033226443"}
+[17:03:43:641] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/order/detail
+[17:03:43:642] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : GET
+[17:03:43:642] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[17:03:43:642] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.OrderController.detail
+[17:03:43:642] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [117033226443]
+[17:05:00:629] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting MallApplication on MateBookD15 with PID 83180 (D:\program\javacode\mall\target\classes started by MLMHYL.D in D:\program\javacode\mall)
+[17:05:00:644] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[17:05:04:466] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8083 (http)
+[17:05:04:487] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8083"]
+[17:05:04:488] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[17:05:04:489] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[17:05:04:723] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[17:05:04:724] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 3929 ms
+[17:05:06:744] [INFO] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[17:05:07:189] [INFO] - org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>(WelcomePageHandlerMapping.java:54) - Adding welcome page: class path resource [static/index.html]
+[17:05:07:801] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+[17:05:07:880] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+[17:05:07:963] [INFO] - springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+[17:05:08:886] [INFO] - springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator.startingWith(CachingOperationNameGenerator.java:40) - Generating unique operation named: listUsingGET_1
+[17:05:08:963] [INFO] - springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator.startingWith(CachingOperationNameGenerator.java:40) - Generating unique operation named: listUsingPOST_1
+[17:05:10:165] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8083"]
+[17:05:10:217] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8083 (http) with context path ''
+[17:05:10:222] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started MallApplication in 10.784 seconds (JVM running for 14.486)
+[17:05:20:434] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[17:05:20:435] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[17:05:20:441] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 6 ms
+[17:05:20:503] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/login
+[17:05:20:503] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : POST
+[17:05:20:504] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[17:05:20:508] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.UserController.login
+[17:05:20:509] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [111, 11111111, org.apache.catalina.session.StandardSessionFacade@1dfbaec8]
+[17:05:20:594] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110) - imooc_mall_datasource - Starting...
+[17:05:20:844] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123) - imooc_mall_datasource - Start completed.
+[17:05:21:019] [INFO] - com.imooc.mall.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:45) - RESPONSE : {"status":10000,"msg":"SUCCESS","date":{"id":23,"username":"111","password":null,"personalizedSignature":"","role":1,"createTime":1712470555000,"updateTime":1712470555000}}
+[17:05:26:142] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/order/detail
+[17:05:26:142] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : GET
+[17:05:26:143] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[17:05:26:143] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.OrderController.detail
+[17:05:26:143] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [117033226443]
+[17:08:11:563] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting MallApplication on MateBookD15 with PID 65096 (D:\program\javacode\mall\target\classes started by MLMHYL.D in D:\program\javacode\mall)
+[17:08:11:574] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[17:08:14:598] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8083 (http)
+[17:08:14:616] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8083"]
+[17:08:14:617] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[17:08:14:617] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[17:08:14:840] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[17:08:14:841] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 3158 ms
+[17:08:16:748] [INFO] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[17:08:17:157] [INFO] - org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>(WelcomePageHandlerMapping.java:54) - Adding welcome page: class path resource [static/index.html]
+[17:08:17:553] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+[17:08:17:589] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+[17:08:17:670] [INFO] - springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+[17:08:18:436] [INFO] - springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator.startingWith(CachingOperationNameGenerator.java:40) - Generating unique operation named: listUsingGET_1
+[17:08:18:503] [INFO] - springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator.startingWith(CachingOperationNameGenerator.java:40) - Generating unique operation named: listUsingPOST_1
+[17:08:19:544] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8083"]
+[17:08:19:585] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8083 (http) with context path ''
+[17:08:19:590] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started MallApplication in 9.185 seconds (JVM running for 12.88)
+[17:09:08:001] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[17:09:08:001] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[17:09:08:007] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 5 ms
+[17:09:08:085] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/login
+[17:09:08:085] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : POST
+[17:09:08:088] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[17:09:08:092] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.UserController.login
+[17:09:08:093] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [111, 11111111, org.apache.catalina.session.StandardSessionFacade@69110dbe]
+[17:09:08:186] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110) - imooc_mall_datasource - Starting...
+[17:09:08:450] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123) - imooc_mall_datasource - Start completed.
+[17:09:08:676] [INFO] - com.imooc.mall.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:45) - RESPONSE : {"status":10000,"msg":"SUCCESS","date":{"id":23,"username":"111","password":null,"personalizedSignature":"","role":1,"createTime":1712470555000,"updateTime":1712470555000}}
+[17:09:12:324] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/order/detail
+[17:09:12:324] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : GET
+[17:09:12:325] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[17:09:12:325] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.OrderController.detail
+[17:09:12:325] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [117033226443]
+[17:09:15:124] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/order/list
+[17:09:15:124] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : GET
+[17:09:15:125] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[17:09:15:125] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.OrderController.list
+[17:09:15:125] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [1, 10]
+[17:20:07:000] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting MallApplication on MateBookD15 with PID 19028 (D:\program\javacode\mall\target\classes started by MLMHYL.D in D:\program\javacode\mall)
+[17:20:07:007] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[17:20:13:362] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8083 (http)
+[17:20:13:403] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8083"]
+[17:20:13:405] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[17:20:13:406] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[17:20:13:875] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[17:20:13:876] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 6655 ms
+[17:20:16:403] [INFO] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[17:20:17:012] [INFO] - org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>(WelcomePageHandlerMapping.java:54) - Adding welcome page: class path resource [static/index.html]
+[17:20:17:476] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+[17:20:17:517] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+[17:20:17:591] [INFO] - springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+[17:20:18:525] [INFO] - springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator.startingWith(CachingOperationNameGenerator.java:40) - Generating unique operation named: listUsingGET_1
+[17:20:18:597] [INFO] - springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator.startingWith(CachingOperationNameGenerator.java:40) - Generating unique operation named: listUsingPOST_1
+[17:20:19:724] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8083"]
+[17:20:19:760] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8083 (http) with context path ''
+[17:20:19:765] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started MallApplication in 13.869 seconds (JVM running for 17.042)
+[17:20:26:758] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[17:20:26:759] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[17:20:26:760] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 1 ms
+[17:20:26:838] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/login
+[17:20:26:838] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : POST
+[17:20:26:838] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[17:20:26:879] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.UserController.login
+[17:20:26:879] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [111, 11111111, org.apache.catalina.session.StandardSessionFacade@4d6c1dff]
+[17:20:26:964] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110) - imooc_mall_datasource - Starting...
+[17:20:27:262] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123) - imooc_mall_datasource - Start completed.
+[17:20:27:458] [INFO] - com.imooc.mall.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:45) - RESPONSE : {"status":10000,"msg":"SUCCESS","date":{"id":23,"username":"111","password":null,"personalizedSignature":"","role":1,"createTime":1712470555000,"updateTime":1712470555000}}
+[17:20:32:553] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/order/detail
+[17:20:32:553] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : GET
+[17:20:32:554] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[17:20:32:554] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.OrderController.detail
+[17:20:32:554] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [117033226443]
+[17:25:35:890] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting MallApplication on MateBookD15 with PID 83512 (D:\program\javacode\mall\target\classes started by MLMHYL.D in D:\program\javacode\mall)
+[17:25:35:896] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[17:25:39:174] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8083 (http)
+[17:25:39:197] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8083"]
+[17:25:39:198] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[17:25:39:199] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[17:25:39:429] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[17:25:39:431] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 3416 ms
+[17:25:41:136] [INFO] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[17:25:41:618] [INFO] - org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>(WelcomePageHandlerMapping.java:54) - Adding welcome page: class path resource [static/index.html]
+[17:25:42:037] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+[17:25:42:067] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+[17:25:42:130] [INFO] - springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+[17:25:42:726] [INFO] - springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator.startingWith(CachingOperationNameGenerator.java:40) - Generating unique operation named: listUsingGET_1
+[17:25:42:792] [INFO] - springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator.startingWith(CachingOperationNameGenerator.java:40) - Generating unique operation named: listUsingPOST_1
+[17:25:43:779] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8083"]
+[17:25:43:818] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8083 (http) with context path ''
+[17:25:43:824] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started MallApplication in 9.051 seconds (JVM running for 11.958)
+[17:26:12:477] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[17:26:12:477] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[17:26:12:483] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 5 ms
+[17:26:12:572] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/login
+[17:26:12:572] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : POST
+[17:26:12:572] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[17:26:12:575] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.UserController.login
+[17:26:12:576] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [111, 11111111, org.apache.catalina.session.StandardSessionFacade@313d4d02]
+[17:26:12:680] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110) - imooc_mall_datasource - Starting...
+[17:26:12:983] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123) - imooc_mall_datasource - Start completed.
+[17:26:13:201] [INFO] - com.imooc.mall.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:45) - RESPONSE : {"status":10000,"msg":"SUCCESS","date":{"id":23,"username":"111","password":null,"personalizedSignature":"","role":1,"createTime":1712470555000,"updateTime":1712470555000}}
+[17:26:17:920] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/cart/add
+[17:26:17:920] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : POST
+[17:26:17:921] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[17:26:17:921] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.CartController.add
+[17:26:17:921] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [23, 2]
+[17:26:18:017] [INFO] - com.imooc.mall.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:45) - RESPONSE : {"status":10000,"msg":"SUCCESS","date":[{"id":10,"productId":23,"userId":23,"quantity":2,"selected":1,"price":12,"totalPrice":24,"productName":"澳大利亚直采鲜橙 精品澳橙12粒 单果130-180g","productImage":"http://127.0.0.1:8083/images/chengzi.jpg"}]}
+[17:26:23:196] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/order/create
+[17:26:23:197] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : POST
+[17:26:23:197] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[17:26:23:197] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.OrderController.create
+[17:26:23:197] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [com.imooc.mall.model.request.CreateOrderReq@130a9789]
+[17:26:23:298] [INFO] - com.imooc.mall.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:45) - RESPONSE : {"status":10000,"msg":"SUCCESS","date":"117262326863"}
+[17:26:34:898] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/order/detail
+[17:26:34:899] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : GET
+[17:26:34:899] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[17:26:34:899] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.OrderController.detail
+[17:26:34:899] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : [117262326863]

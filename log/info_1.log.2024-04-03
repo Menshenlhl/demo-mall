@@ -1,0 +1,41 @@
+[18:56:40:828] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting MallApplication on MateBookD15 with PID 15560 (D:\program\javacode\mall\target\classes started by MLMHYL.D in D:\program\javacode\mall)
+[18:56:40:833] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[18:56:41:823] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8083 (http)
+[18:56:41:830] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8083"]
+[18:56:41:832] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[18:56:41:832] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[18:56:41:904] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[18:56:41:904] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 1024 ms
+[18:56:42:409] [INFO] - org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>(WelcomePageHandlerMapping.java:54) - Adding welcome page: class path resource [static/index.html]
+[18:56:42:530] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8083"]
+[18:56:42:546] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8083 (http) with context path ''
+[18:56:42:548] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started MallApplication in 2.167 seconds (JVM running for 3.413)
+[19:28:20:008] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting MallApplication on MateBookD15 with PID 15336 (D:\program\javacode\mall\target\classes started by MLMHYL.D in D:\program\javacode\mall)
+[19:28:20:012] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[19:28:21:141] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:92) - Tomcat initialized with port(s): 8083 (http)
+[19:28:21:148] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8083"]
+[19:28:21:148] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[19:28:21:148] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+[19:28:21:224] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[19:28:21:225] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 1168 ms
+[19:28:21:845] [INFO] - org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>(WelcomePageHandlerMapping.java:54) - Adding welcome page: class path resource [static/index.html]
+[19:28:22:038] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8083"]
+[19:28:22:054] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:204) - Tomcat started on port(s): 8083 (http) with context path ''
+[19:28:22:056] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started MallApplication in 2.448 seconds (JVM running for 3.515)
+[19:28:54:378] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[19:28:54:378] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[19:28:54:379] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 1 ms
+[19:28:54:402] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/text
+[19:28:54:402] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : GET
+[19:28:54:402] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[19:28:54:404] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.UserController.personalPage
+[19:28:54:404] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : []
+[19:28:54:435] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:110) - imooc_mall_datasource - Starting...
+[19:28:54:538] [INFO] - com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:123) - imooc_mall_datasource - Start completed.
+[19:28:54:626] [INFO] - com.imooc.mall.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:45) - RESPONSE : {"id":1,"username":"1","password":"1","personalizedSignature":"666","role":1,"createTime":1576435053000,"updateTime":1582958003000}
+[19:28:55:957] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:34) - URL : http://127.0.0.1:8083/text
+[19:28:55:957] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:35) - HTTP_METHOD : GET
+[19:28:55:957] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:36) - IP : 127.0.0.1
+[19:28:55:957] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:37) - CLASS_MATHOD : com.imooc.mall.controller.UserController.personalPage
+[19:28:55:957] [INFO] - com.imooc.mall.filter.WebLogAspect.doBefore(WebLogAspect.java:39) - ARGS : []
+[19:28:55:966] [INFO] - com.imooc.mall.filter.WebLogAspect.doAfterReturning(WebLogAspect.java:45) - RESPONSE : {"id":1,"username":"1","password":"1","personalizedSignature":"666","role":1,"createTime":1576435053000,"updateTime":1582958003000}
